@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Poppins:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Belanosima', sans-serif;
+}
+img{
+    width: 100%;
+}
+#imagenFondo{
+    padding:60px;
+    background-image: url(../img/estudiantes.jpg);
+    height: 500px;
+    background-size: cover;
+    justify-content: center;
+    text-align:left;
+    color: #1F8A70;
+    text-shadow: 10px 5px 7px white;
+}
+
+/*estilo barra de navegacion*/
+ul{
+    list-style-type: none;
+
+}
+li a{
+    text-decoration: none;
+}
+ul#opciones li a{
+    font-size: 1.5rem;
+    color: white;
+    position:relative;    
+}
+#titulo{
+    font-size: 200px;
+}
+#encabezado{
+    display: grid;
+    grid-template-columns: repeat(5,100%);
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(31, 138, 112, 0.8);    
+}
+
+#opciones{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(5,1fr);
+    list-style-type: none;
+}
+
+/*estilo quienes somos*/
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+#titulo1{
+    background-color: #FC7300;
+    margin: 0;
+    padding: 20px;
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+#quienessomos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #FC7300;
+    align-items: center;
+}
+.quienesss{
+    text-align: justify;
+    padding: 20px;
+}
+/*estilo por que elegirnos*/
+#titulo2{
+    background-color: #00425A;
+    margin: 0;
+    color: white;
+    padding: 20px;
+}
+#porqueelegirnos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #00425A;
+    align-items: center;
+}
+.porquee{
+    text-align: justify;
+    padding: 20px;
+    color: white;
+}
+/*estilo propuesta educativa*/
+#titulo3{
+    background-color: #1F8A70;
+    color: white;
+    margin: 0;
+    padding: 20px;
+}
+#propuestaeduc{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    background-color: #1F8A70;
+    padding: 20px;
+}
+#ultimasNoticias{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#piePagina{
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 2fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+#redessociales{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+
+}
+ion-icon{
+    font-size: 3rem;
+}
