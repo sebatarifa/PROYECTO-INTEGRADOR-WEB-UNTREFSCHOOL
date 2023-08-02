@@ -1,138 +1,224 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Poppins:wght@300&display=swap');
 
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     font-family: 'Belanosima', sans-serif;
 }
-img{
+
+img {
     width: 100%;
 }
-#imagenFondo{
-    padding:60px;
+
+#imagenFondo {
+    padding: 60px;
     background-image: url(../img/estudiantes.jpg);
     height: 500px;
     background-size: cover;
     justify-content: center;
-    text-align:left;
+    text-align: left;
     color: #1F8A70;
     text-shadow: 10px 5px 7px white;
 }
 
 /*estilo barra de navegacion*/
-ul{
+ul {
     list-style-type: none;
 
 }
-li a{
+
+li a {
     text-decoration: none;
 }
-ul#opciones li a{
+
+ul#opciones li a {
     font-size: 1.5rem;
     color: white;
-    position:relative;    
+    position: relative;
 }
-#titulo{
+
+#titulo {
     font-size: 200px;
 }
-#encabezado{
+
+#encabezado {
     display: grid;
-    grid-template-columns: repeat(5,100%);
+    grid-template-columns: repeat(5, 100%);
     align-items: center;
     position: fixed;
     width: 100%;
     z-index: 1;
-    background-color: rgba(31, 138, 112, 0.8);    
+    background-color: rgba(31, 138, 112, 0.8);
 }
 
-#opciones{
+#opciones {
     display: grid;
     align-items: center;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(5, 1fr);
     list-style-type: none;
 }
 
 /*estilo quienes somos*/
 @keyframes slidein {
     from {
-      margin-left: 100%;
-      width: 300%
+        margin-left: 100%;
+        width: 300%
     }
-  
+
     to {
-      margin-left: 0%;
-      width: 100%;
+        margin-left: 0%;
+        width: 100%;
     }
-  }
-#titulo1{
+}
+
+#titulo1 {
     background-color: #FC7300;
     margin: 0;
     padding: 20px;
     animation-duration: 3s;
     animation-name: slidein;
 }
-#quienessomos{
+
+#quienessomos {
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: #FC7300;
     align-items: center;
 }
-.quienesss{
+
+.quienesss {
     text-align: justify;
     padding: 20px;
 }
+
 /*estilo por que elegirnos*/
-#titulo2{
+#titulo2 {
     background-color: #00425A;
     margin: 0;
     color: white;
     padding: 20px;
 }
-#porqueelegirnos{
+
+#porqueelegirnos {
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: #00425A;
     align-items: center;
 }
-.porquee{
+
+.porquee {
     text-align: justify;
     padding: 20px;
     color: white;
 }
+
 /*estilo propuesta educativa*/
-#titulo3{
+#titulo3 {
     background-color: #1F8A70;
     color: white;
     margin: 0;
     padding: 20px;
 }
-#propuestaeduc{
+
+#propuestaeduc {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     align-items: center;
     background-color: #1F8A70;
     padding: 20px;
 }
-#ultimasNoticias{
+
+#ultimasNoticias {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-#piePagina{
+
+#piePagina {
     display: grid;
     grid-template-columns: 1fr 0.5fr 2fr 1fr;
     justify-items: center;
     align-items: center;
 }
-#redessociales{
+
+#redessociales {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
 
 }
-ion-icon{
+
+ion-icon {
     font-size: 3rem;
 }
+
+
+/*Estilos Ultimas Noticias*/
+
+#titulo4 {
+    background-color: #FC7300;
+    color: white;
+    margin: 0;
+    padding: 20px;
+}
+
+#ultimasNoticias {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    background-color: #FC7300;
+    padding: 20px;
+    gap: 10px;
+    color: white;
+    height: 300px;
+}
+
+/*Estilos Formulario*/
+
+.contacto {
+    background-image: url(../img/formulario.jpg);
+    background-size: cover;
+}
+
+.form {
+    width: 50%;
+    background: rgba(173, 170, 167, 0.6);
+    margin: 0% auto;
+    margin-top: 50px;
+    padding: 10px;
+    color: aliceblue;
+}
+
+.fomr__imput {
+    width: 100%;
+    height: 45px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #2756c265;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.fomr__text {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #2755c2;
+}
+
+.fomr__text::placeholder {
+    font-size: 1.4rem;
+}
+
+#boton {
+    border-radius: 5px;
+}
+
